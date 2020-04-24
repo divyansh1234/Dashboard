@@ -30,14 +30,14 @@ function signIn() {
     promise.catch(e => alert(e.message));
     alert("signed in")
     //takes user to different page
-    window.location.href = "/Dashboard/dashboard.html";
+    window.location.href = "dashboard.html";
 
 }
 //function for signOut
 function signOut() {
     auth.signOut();
     alert("signed out")
-    window.location.href = "/Dashboard/index.html";
+    window.location.href = "index.html";
 
 }
 auth.onAuthStateChanged(function (user) {
