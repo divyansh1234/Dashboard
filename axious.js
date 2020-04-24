@@ -1,4 +1,5 @@
-
+// $(document).ready(function () {
+    // $(".dashboard").hide();
 // Firebase configuration
 var firebaseConfig = {
     apiKey: "AIzaSyAb8eseTl2fTPNaGdkX9dtnqX9csjVRypw",
@@ -29,6 +30,7 @@ function signIn() {
     const promise = auth.signInWithEmailAndPassword(email.value, password.value);
     promise.catch(e => alert(e.message));
     alert("signed in")
+    // $("#dashboard").show();
     //takes user to different page
     window.location.href = "dashboard.html";
 
@@ -80,6 +82,7 @@ fetch = (num) => {
             })
     }
 }
+})
 
 
 
