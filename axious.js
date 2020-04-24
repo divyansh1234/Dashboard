@@ -30,14 +30,14 @@ function signIn() {
     promise.catch(e => alert(e.message));
     alert("signed in")
     //takes user to different page
-    window.location.href = "file:///home/divyansh/coding/projects/Dashboard/dashboard.html";
+    window.location.href = "/Dashboard/dashboard.html";
 
 }
 //function for signOut
 function signOut() {
     auth.signOut();
     alert("signed out")
-    window.location.href = "file:///home/divyansh/coding/projects/Dashboard/index.html";
+    window.location.href = "/Dashboard/index.html";
 
 }
 auth.onAuthStateChanged(function (user) {
