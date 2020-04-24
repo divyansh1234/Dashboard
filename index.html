@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="axious.js"></script>
+    <link rel="stylesheet" type="text/css" href="dashboard.css">
+</head>
+
+<body>
+    <h1>
+        <marquee>Dashboard Login</marquee>
+    </h1>
+    <div class="container">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email">
+        <label for="password">Password:</label>
+        <input type="password" class="form-control" id="password" placeholder="Enter password"><br>
+        New User?<button type="submit" onclick="signUp()" id="signUp" class="btn btn-success">SignUp</button>
+        Already Registered?<button type="submit" onclick="signIn()" id="signIn" class="btn btn-primary">Login</button>
+    </div>
+
+</body>
+
+</html>

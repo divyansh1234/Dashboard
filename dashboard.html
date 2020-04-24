@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="axious.js"></script>
+    <link rel="stylesheet" type="text/css" href="dashboard.css">
+</head>
+
+<body id="dashbody">
+    <h2>Dashboard</h2>
+    <button type="submit" onclick="fetch()" class="btn btn-primary">Fetch Data</button>
+    <button type="submit" onclick="signOut()" id="signOut" class="btn btn-danger">SignOut</button>
+    <table class="mt-2 text-white" id="tbl">
+        <thead>
+            <th>Device Id</th>
+            <th>Device Name</th>
+            <th>Device Type</th>
+            <th>Device Power</th>
+
+        </thead>
+    </table>
+
+</body>
+
+</html>
